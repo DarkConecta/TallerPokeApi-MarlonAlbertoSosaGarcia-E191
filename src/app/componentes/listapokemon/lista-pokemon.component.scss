@@ -1,0 +1,15 @@
+.custom-content {
+  --ion-background-color: #f71c1c; /* Color de fondo */
+  padding: 20px; /* Relleno */
+}
+
+ion-list {
+  margin-top: 20px; /* Margen superior */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+app-pokemon {
+  border-bottom: 1px solid #ccc; /* Borde inferior */
+  padding: 10px 0; /* Relleno */
+}

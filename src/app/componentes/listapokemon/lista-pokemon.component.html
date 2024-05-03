@@ -1,0 +1,5 @@
+<ion-content role="feed" class="custom-content">
+  <ion-list>
+    <app-pokemon role="article" *ngFor="let pokemon of pokemonsRender; index as i" [pokemon]="pokemon"></app-pokemon>
+  </ion-list>
+</ion-content>

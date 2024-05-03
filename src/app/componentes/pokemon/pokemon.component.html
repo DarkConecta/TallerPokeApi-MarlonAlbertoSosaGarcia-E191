@@ -1,0 +1,10 @@
+<ion-item class="custom-item">
+  <ion-nav-link router-direction="forward" [component]="pageData" [componentProps]="{idPokemon: getId(pokemon.url)}">
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img [alt]="pokemon.name" [src]="sprite" />
+      </ion-thumbnail>
+      <ion-label class="custom-label">{{getId(pokemon.url)}} - {{capitalize(pokemon.name)}}</ion-label>
+    </ion-item>
+  </ion-nav-link>
+</ion-item>

@@ -1,0 +1,22 @@
+.custom-header {
+    --ion-background-color: #ff0033; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+  }
+  
+  .custom-content {
+    --ion-background-color: #ffffff; /* Color de fondo del contenido */
+    padding: 20px; /* Relleno */
+  }
+
+  .custom-header {
+    --ion-background-color: #ff3860; /* Cambia el color de fondo del encabezado */
+    color: #fff; /* Cambia el color del texto del encabezado */
+  }
+  
+  .custom-title {
+    color: #ffffff; /* Cambia el color del texto del título */
+    background-color: #ff0000; /* Cambia el color de fondo del título */
+    padding: 10px; /* Añade relleno al título */
+    border-radius: 10px; /* Añade esquinas redondeadas al título */
+  }
+  

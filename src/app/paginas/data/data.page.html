@@ -1,0 +1,63 @@
+<ion-header [translucent]="true" style="
+    background-color: #ff3860;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pokemon: {{pokemon ? capitalize(pokemon.name) : ""}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="
+    padding: 20px;
+">
+  <ion-card *ngIf="pokemon" style="
+      background-color: #f8f9fa;
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  ">
+    <img alt="pokemon" [src]="pokemon.sprites.front_default"  width="200px"/>
+    <ion-card-header>
+      <ion-card-title style="font-size: 2rem; color: #343a40;">{{capitalize(pokemon.name)}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-card-subtitle style="color: #6c757d;">Estadísticas</ion-card-subtitle>
+      <table style="width: 100%;">
+        <tr>
+          <td><strong>Peso</strong></td>
+          <td>{{pokemon.weight}} kg</td>
+        </tr>
+        <tr *ngFor="let stat of pokemon.stats">
+          <td><strong>{{ stat.stat.name.toUpperCase() }}</strong></td>
+          <td>{{ stat.base_stat }}</td>
+        </tr>
+      </table>
+
+      <ion-card-subtitle style="margin-top: 1rem; color: #6c757d;">Tipos</ion-card-subtitle>
+      <ion-row>
+        <ion-col size="auto" *ngFor="let type of pokemon.types">
+          <ion-chip color="success">{{type.type.name}}</ion-chip>
+        </ion-col>
+      </ion-row>
+
+      <ion-card-subtitle style="margin-top: 1rem; color: #6c757d;">Movimientos</ion-card-subtitle>
+      <table style="width: 100%;">
+        <tr *ngFor="let move of pokemon.moves">
+          <td>{{capitalize(move.move.name)}}</td>
+        </tr>
+      </table>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>MARLON ALBERTO SOSA GARCIA E191</ion-title>
+  </ion-toolbar>
+</ion-footer>

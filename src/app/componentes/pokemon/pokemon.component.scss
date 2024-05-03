@@ -1,0 +1,20 @@
+.custom-item {
+    --inner-padding-start: 0.5rem; /* Espacio interior en el inicio */
+    --inner-padding-end: 0.5rem; /* Espacio interior en el final */
+    --inner-padding-top: 1rem; /* Espacio interior en la parte superior */
+    --inner-padding-bottom: 1rem; /* Espacio interior en la parte inferior */
+  }
+  
+  .custom-label {
+    font-size: 1rem; /* Tamaño del texto */
+    color: #e7f097; /* Color del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Bloque en línea */
+    width: 100%; /* Ancho completo */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  .custom-label:hover {
+    color: #007bff; /* Cambia el color del texto al pasar por encima */
+  }
+  
